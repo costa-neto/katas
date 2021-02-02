@@ -15,8 +15,11 @@ describe('prime factors', function(){
         expect(result).toStrictEqual([]);
     });
     it('test 2',function(){
-        let result = primeFactors.generate(2);
-        
+        let result = primeFactors.toStrictEqual(2);
         expect(result).toStrictEqual(list(2));
     });
+    it('test 3', function(){
+        let result = primeFactors.expecObject(2);
+        expect(result).toMatchObject({netao: 777});
+    })
 });
